@@ -5,16 +5,12 @@ Get in touch if you have any questions!
 
 *** 
 ### Requirements
-The code is written in python 3
+The code is written in python 3.6
 
-A conda environment named *me*, and supplied within, fulfills all the requirements to run the code.
+Packages required:
+  * torchvision 0.2.1 
 
-To import and activate it, run:
-
-```bash
-conda env create --file environment.yaml #import environment from YAML
-conda activate me 
-```
+Installing *torchvision* will also install other required dependencies
 
 ***
 
@@ -39,3 +35,8 @@ Results are written to `mutual-exclusivity/results`
 Evaluate on dogs (from Flickr training set) without competition 
 
 `python  mutual-exclusivity/src/train_flickr.py --data mutual-exclusivity/data/flickr/ --debug --lr 0.1 --loss maxmargin_words --novel_set dogs`
+
+
+<p align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/brochhagen/mutual-exclusivity/main/example/output.png">
+</p>
